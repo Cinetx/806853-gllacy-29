@@ -6,10 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-.*scss
-scss/*.scss
-gulpfile.js
-*.json
 node_modules/
 npm-debug.*
 Thumbs.db

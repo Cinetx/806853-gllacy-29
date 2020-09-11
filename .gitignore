@@ -6,15 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-<<<<<<< Updated upstream
-.*scss
-scss/*.scss
-=======
-scss/
-.gitignore
->>>>>>> Stashed changes
-gulpfile.js
-*.json
 node_modules/
 npm-debug.*
 Thumbs.db

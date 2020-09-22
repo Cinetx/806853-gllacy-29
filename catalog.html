@@ -12,8 +12,8 @@
 <body>
   <header class="main__header">
     <nav class="nav">
-      <a class="nav__logo__link" href="">
-        <img class="nav__logo__img" src='https://via.placeholder.com/150x100' width="154" height="64"
+      <a class="nav__logo__link" href="index.html">
+        <img class="nav__logo__img" src='img/Logo.svg' width="154" height="64"
           alt="Магазин мороженного 'Глейси'">
       </a>
       <ul class="nav__list">
@@ -31,8 +31,10 @@
       </ul>
 
       <ul class="nav__menu">
-        <li class="nav__menu__item"><input class="nav__menu__search nav__menu__link" type="search"></li>
-        <li class="nav__menu__item"><a class="nav__menu__login nav__menu__link" href="">Вход</a>
+        <li class="nav__menu__item"><img src="img/search-icon.svg" alt="Поиск" width="16" height="16">
+          <input class="nav__menu__search nav__menu__link" type="search"></li>
+        <li class="nav__menu__item"><img src="img/login-icon.svg" alt="Вход" width="16" height="16">
+          <a class="nav__menu__login nav__menu__link" href="">Вход</a>
           <form class="login">
             <input class="login__input" type="email" placeholder="email@example.com">
             <input class="login__input" type="password" placeholder="......">
@@ -41,7 +43,8 @@
             <a class="login__link" href="">Новая регистрация</a>
           </form>
         </li>
-        <li class="nav__menu__item"><a class="nav__menu__cart nav__menu__link" href="">Пусто</a></li>
+        <li class="nav__menu__item"><img src="img/cart-full-icon.svg" alt="Корзина" width="16" height="16">
+          <a class="nav__menu__cart nav__menu__cart--full nav__menu__link" href="">2 товара</a></li>
       </ul>
     </nav>
 
@@ -59,7 +62,7 @@
   </header>
 
 
-  <main class="main">
+  <main class="main__catalog">
     <h1 class="visually-hidden">Каталог сливочного мороженого магазина 'Глейси'</h1>
     <h3 class="product__title">Сливочное мороженое</h3>
     <form class="sorting__form">
@@ -68,6 +71,10 @@
           <p class="sorting__type__text">Сортировка:</p>
           <select class="sorting__type__select">
             <option>по популярности</option>
+            <option>сначала не дорогие</option>
+            <option>сначала дорогие</option>
+            <option>по жирности</option>
+
           </select>
         </div>
 
@@ -122,91 +129,103 @@
       
       <ul class="product__list">
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product1.png' width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="product__price">310 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное с апельсиновым джемом и цитрусовой
               стружкой</a></h4>
+              <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <img class="product__img" src='img/product2.png' width="267" height="267"
+          alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>380 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-кофейное с кусочками шоколада</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <img class="product__img" src='img/product3.png' width="267" height="267"
+          alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="product__price">355 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-клубничное с присыпкой из белого
               шоколада</a></h4>
+              <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product4.png' width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="product__price">415 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное крем-брюле с карамельной подливкой</a>
           </h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product5.png' width="267" height="267"
             alt="Сливочное с брусничным джемом">
           <p class="product__price">325 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное с брусничным джемом</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product6.png' width="267" height="267"
             alt="Сливочно-черничное с цельными ягодами черники ">
           <p class="product__price">410 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-черничное с цельными ягодами черники</a>
           </h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product7.png' width="267" height="267"
             alt="Сливочно-лимонное с карамельной присыпкой">
           <p class="product__price">315 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-лимонное с карамельной присыпкой</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product8.png' width="267" height="267"
             alt="Сливочное с шоколадной стружкой">
           <p class="product__price">320 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное с шоколадной стружкой</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product9.png' width="267" height="267"
             alt="Сливочно-ванильное с кусочками шоколада">
           <p class="product__price">440 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-ванильное с кусочками шоколада</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product10.png' width="267" height="267"
             alt="Сливочноe с ментоловым сиропом">
           <p class="product__price">435 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочноe с ментоловым сиропом</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product11.png' width="267" height="267"
             alt="Сливочное с кусочками черного шоколада">
           <p class="product__price">355 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное с кусочками черного шоколада</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product__item">
-          <img class="product__img" src='https://via.placeholder.com/150x100' width="267" height="267"
+          <img class="product__img" src='img/product12.png' width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="product__price">420 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочное с мятным сиропом</a></h4>
+          <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
 
       </ul>
@@ -228,10 +247,10 @@
     <section class="socials">
       <h5 class="visually-hidden">Наши соц сети</h5>
       <ul class="socials__list">
-        <li class="socials__item"><a class="socials__link" href="">Facebook</a></li>
-        <li class="socials__item"><a class="socials__link" href="">VK</a></li>
-        <li class="socials__item"><a class="socials__link" href="">Instagram</a></li>
-        <li class="socials__item"><a class="socials__link" href="">Twitter</a></li>
+        <li class="socials__item"><a class="socials__link" href="">Facebook <img src="img/facebock.svg" alt=""></a></li>
+        <li class="socials__item"><a class="socials__link" href="">VK <img src="img/vk.svg" alt=""></a></li>
+        <li class="socials__item"><a class="socials__link" href="">Instagram <img src="img/instagram.svg" alt=""></a></li>
+        <li class="socials__item"><a class="socials__link" href="">Twitter <img src="img/twitter.svg" alt=""></a></li>
       </ul>
     </section>
 
@@ -247,8 +266,7 @@
 
     <section class="footer__copyright">
       <h5 class="visually-hidden">Кем созданно</h5>
-      <img class="footer__copyright__img" src='https://via.placeholder.com/150x100' width="108" height="39"
-        alt="HTML Academy">
+      <img class="footer__copyright__img" src='img/HTMLAcademy-logo.svg' width="108" height="39" alt="HTML Academy">
       <p class="footer__copyright__text">
         Сделано в
         <a class="footer__copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>

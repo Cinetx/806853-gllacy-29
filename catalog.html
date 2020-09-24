@@ -9,9 +9,10 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="main__header">
+<body class="page__body">
+  <header class="main__header container">
     <nav class="nav">
+      <div class="nav__wrapper">
       <a class="nav__logo__link" href="index.html">
         <img class="nav__logo__img" src='img/Logo.svg' width="154" height="64"
           alt="Магазин мороженного 'Глейси'">
@@ -29,6 +30,7 @@
         <li class="nav__item"><a class="nav__link" href="">Доставка и оплата</a></li>
         <li class="nav__item"><a class="nav__link" href="">О компании</a></li>
       </ul>
+    </div>
 
       <ul class="nav__menu">
         <li class="nav__menu__item"><img src="img/search-icon.svg" alt="Поиск" width="16" height="16">
@@ -63,6 +65,7 @@
 
 
   <main class="main__catalog">
+    <div class="container">
     <h1 class="visually-hidden">Каталог сливочного мороженого магазина 'Глейси'</h1>
     <h3 class="product__title">Сливочное мороженое</h3>
     <form class="sorting__form">
@@ -140,7 +143,7 @@
         <li class="product__item">
           <img class="product__img" src='img/product2.png' width="267" height="267"
           alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <p>380 ₽<span>/кг</span></p>
+          <p class="product__price">380 ₽<span>/кг</span></p>
           <h4 class="product__name"><a class="product__link" href="">Сливочно-кофейное с кусочками шоколада</a></h4>
           <a class="button product__button" href="">Быстрый просмотр</a>
         </li>
@@ -241,15 +244,16 @@
       </ul>
     </section>
 
-
+  </div>
   </main>
-  <footer class="page-footer">
+  <footer class="page__footer container">
     <section class="socials">
       <h5 class="visually-hidden">Наши соц сети</h5>
       <ul class="socials__list">
         <li class="socials__item"><a class="socials__link" href="">Facebook <img src="img/facebock.svg" alt=""></a></li>
         <li class="socials__item"><a class="socials__link" href="">VK <img src="img/vk.svg" alt=""></a></li>
-        <li class="socials__item"><a class="socials__link" href="">Instagram <img src="img/instagram.svg" alt=""></a></li>
+        <li class="socials__item"><a class="socials__link" href="">Instagram <img src="img/instagram.svg" alt=""></a>
+        </li>
         <li class="socials__item"><a class="socials__link" href="">Twitter <img src="img/twitter.svg" alt=""></a></li>
       </ul>
     </section>

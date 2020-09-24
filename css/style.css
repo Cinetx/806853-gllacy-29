@@ -79,11 +79,6 @@ img {
   height: 1px;
   margin: -1px; }
 
-.main__header {
-  width: 1200px;
-  padding: 0 27px;
-  margin: 0 auto; }
-
 .nav {
   display: grid;
   grid-template-columns: 3fr 1fr; }
@@ -415,9 +410,7 @@ img {
 .page__footer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  width: 1200px;
-  padding: 0 27px;
-  margin: 0 auto; }
+  border-top: 1px solid var(--opacity-bck); }
 
 .socials__list {
   padding: 0;
@@ -454,6 +447,7 @@ img {
           text-decoration-color: rgba(255, 255, 255, 0.3); }
 
 .header__page__list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0; }
@@ -507,6 +501,9 @@ img {
   color: var(--white); }
 
 .product__page__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none; }
 
 .product__page__link {

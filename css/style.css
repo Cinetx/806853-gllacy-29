@@ -32,8 +32,14 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-  background: #849D8F; }
+  font-size: 14px; }
+
+.site__wrapper {
+  background: #849D8F;
+  background-color: #849d8f;
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: top center; }
 
 img {
   max-width: 100%;
@@ -336,11 +342,14 @@ img {
   color: var(--black); }
 
 .about-us__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0; }
 
 .about-us__item {
+  flex-basis: 50%;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;

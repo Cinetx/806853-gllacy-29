@@ -32,7 +32,8 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #849d8f; }
 
 .site__wrapper {
   background: #849D8F;
@@ -122,6 +123,9 @@ img {
   .nav__link--active {
     background: var(--nav-bck-on-page); }
 
+.nav__link--current {
+  background-color: var(--nav-bck-on-page); }
+
 .nav__catalog__list {
   display: none;
   background: var(--white);
@@ -171,6 +175,10 @@ img {
   margin-right: 8px; }
   .menu__icon--search {
     margin: 0; }
+
+.nav__menu__cart {
+  display: flex;
+  padding: 0 16px; }
 
 .nav__menu__cart--full {
   background-color: var(--white);
@@ -522,11 +530,9 @@ img {
   padding: 0;
   margin: 0; }
 
-.header__page__item::before {
-  content: url("../img/arow.svg"); }
-
-.header__page__item:nth-child(1)::before {
-  content: none; }
+.header__page__item:not(:last-child)::after {
+  content: url("../img/arow.svg");
+  margin: 0 8px; }
 
 .header__page__link {
   font-size: 14px;
@@ -543,15 +549,31 @@ img {
   line-height: 16px;
   color: var(--white); }
 
+.sorting__form__wrapper {
+  display: flex; }
+
+.sorting__form__sub-wrapper {
+  display: flex; }
+
+.sorting__type {
+  margin-right: 15px; }
+
 .sorting__type__select {
+  background-color: var(--opacity-bck);
+  border-radius: 20px;
+  border: none; }
+
+.sorting__price {
+  margin-right: 15px; }
+
+.sorting__fat__wrapper {
   background-color: var(--opacity-bck);
   border-radius: 20px; }
 
-.sorting__fat__wrapper {
-  background-color: var(--opacity-bck); }
-
 .sorting__fillers__wrapper {
-  background-color: var(--opacity-bck); }
+  background-color: var(--opacity-bck);
+  border-radius: 20px;
+  margin-right: 15px; }
 
 .sorting__button {
   background-color: var(--opacity-bck);
@@ -574,7 +596,11 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  justify-content: flex-end; }
+
+.porduct__page__item:not(:last-child) {
+  margin-right: 15px; }
 
 .product__page__link {
   text-decoration: none;
@@ -596,3 +622,12 @@ img {
   .product__page__link:active {
     color: var(--black);
     background-color: var(--white); }
+
+.product__page__link--prev,
+.product__page__link--next {
+  font-size: 0px; }
+
+.product__page__link--prev {
+  transform: rotate(180deg); }
+  .product__page__link--prev svg {
+    opacity: 0.3; }

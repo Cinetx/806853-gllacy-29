@@ -82,7 +82,7 @@
                 fill="#343434" />
               <path d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="#E84D37" />
             </svg>
-            2 товара</a>
+            2&nbspтовара</a>
           <form class="cart">
             <h2 class="visually-hidden">Корзина пользователя</h2>
             <ul class="cart__list">
@@ -99,7 +99,7 @@
                 <p class="cart__price">1,5 кг х <span>200 руб.</span></p>
                 <p>300 руб.</p>
               </li>
-              
+
 
               <li class="cart__item">
                 <button class="cart__delete" type="button">
@@ -111,13 +111,13 @@
                   <span class="visually-hidden">Удалить товар</span></button>
                 <img src="img/cart-product2.png" width="33" height="33" alt="Пломбир розового цвета">
                 <p class="cart__name">Клубничный пломбир с присыпкой из белого шоколада
-                 
+
                 </p>
                 <p class="cart__price">1,5 кг <span>х 300 руб.</span></p>
                 <p>450 руб.</p>
               </li>
 
-              
+
             </ul>
             <p class="cart__final-price">Итого: 750 руб.</p>
               <button class="button" type="submit">Оформить заказ</button>
@@ -154,30 +154,51 @@
 
         <fieldset class="sorting__type">
           <legend>Сортировка:</legend>
+          <div class="sorting__type__wrapper">
           <span><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
             </svg>
             </span>
           <select class="sorting__type__select">
-            
+
             <option>по популярности</option>
             <option>сначала не дорогие</option>
             <option>сначала дорогие</option>
             <option>по жирности</option>
 
           </select>
-
+        </div>
         </fieldset>
 
         <fieldset class="sorting__price">
-          <legend class="sorting__price__text">Цена: <input class="sorting__number" type="number" class="" value="0"
-              min="0" max="1000" maxlength=6 /> ₽ – <input class="sorting__number" type="number" class="" value="1000"
-              min="0" max="1000" maxlength=6 /> ₽</legend>
-          <div class="range__wrapper">
-            <input type="range" class="lower range" step="any" min="0" max="1000" value="0" />
-            <input type="range" class="upper range" step="any" min="0" max="1000" value="1000" />
-            <div class="fill"></div>
+          <div class='sorting__price__wrapper'>
+          <div class="price-controls">
+            <label class="min-price">
+              Цена
+              от <input type="number" name="min-price" value="0">₽ —
+            </label>
+            <label class="max-price">
+            <input type="number" name="max-price" value="1000"> ₽
+            </label>
           </div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+                  width: 30%;
+                  margin-left: 20%
+                "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="
+                left: 20%
+              "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+                left: 50%
+              "></div>
+            </div>
+
+          </div>
+        </div>
         </fieldset>
 
         <fieldset class="sorting__fat">
@@ -199,13 +220,6 @@
               <input id="more-30" class="sorting__fat__radio visually-hidden" name="radio__fat" type="radio">
               <label for="more-30" class="sorting__fat__label">выше 30%</label>
             </li>
-
-
-
-
-
-
-
           </ul>
         </fieldset>
       </div>

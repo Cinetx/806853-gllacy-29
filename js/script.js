@@ -3,14 +3,14 @@ const sliderItem = document.querySelectorAll('.slider__item');
 const sliderButton = document.querySelectorAll('.slider__menu__button');
 
 
-// находим все кнопки
+
 sliderButton.forEach((btn) => {
   btn.addEventListener('click', function () {
 
 
-    // находим все слайды
+
     sliderItem.forEach((item) => {
-      // Проверяем dataset у слайдов и кнопок, выставляем нужный слайд
+
 
       if (btn.dataset.slider == item.dataset.slider) {
         item.classList.remove('visually-hidden');
@@ -89,9 +89,9 @@ modal.addEventListener('submit', function (event) {
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if(!modal.classList.contains('visually-hidden')) {
+    if (!modal.classList.contains('visually-hidden')) {
       evt.preventDefault();
       modal.classList.add('visually-hidden');
     }
-   }
+  }
 });
